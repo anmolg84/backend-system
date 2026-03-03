@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16be4f63-7bc1-41c8-83b8-22d336dd03b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Collections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Conditional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Datatypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Deserialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Enums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Exceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Generics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Inputs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Introduction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Keywords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Loops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/OOPs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Reflection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Serialization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Threads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/src/main/java/com/backend/java/Variables.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;anmolg84&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:anmolg84/backend-system.git&quot;,
+    &quot;accountId&quot;: &quot;be8fbc19-ec21-42ea-9bd2-f77d0aa104f3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3AO4qw5Rvm5iLBWsZcSxkuQyp2I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Arrays.executor": "Run",
+    "Application.Collections.executor": "Run",
+    "Application.Conditional.executor": "Run",
+    "Application.Datatypes.executor": "Run",
+    "Application.Enums.executor": "Run",
+    "Application.Exceptions.executor": "Run",
+    "Application.Generics.executor": "Run",
+    "Application.Inputs.executor": "Run",
+    "Application.Interface.executor": "Run",
+    "Application.Introduction.executor": "Debug",
+    "Application.Loops.executor": "Run",
+    "Application.OOPs.executor": "Run",
+    "Application.Reflection.executor": "Run",
+    "Application.Serialization.executor": "Run",
+    "Application.Strings.executor": "Run",
+    "Application.Threads.executor": "Run",
+    "Application.Variables.executor": "Run",
+    "Maven.java [clean].executor": "Run",
+    "Maven.java [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/anmolgupta/IdeaProjects/backend-system/java/src/main/java/com/backend/java",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java/src/main/java/com/backend/java" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Threads">
+    <configuration name="Collections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.java.Collections" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Enums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.java.Enums" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OOPs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.java.OOPs" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reflection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.java.Reflection" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Threads" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.java.Threads" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Threads" />
+        <item itemvalue="Application.OOPs" />
+        <item itemvalue="Application.Enums" />
+        <item itemvalue="Application.Reflection" />
+        <item itemvalue="Application.Collections" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16be4f63-7bc1-41c8-83b8-22d336dd03b5" name="Changes" comment="" />
+      <created>1772450477032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772450477032</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
