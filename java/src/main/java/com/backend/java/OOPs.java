@@ -14,14 +14,18 @@ import java.io.Serializable;
         * Encapsulation: Binds private instance variable using Access-Modifiers (restricting direct data access)
             * Providing public getter and setter methods to access variables
             * Access modifiers: private, public, protected, default to control access to fields
-        * Polymorphism: one entity/methods can take many forms
+        * Polymorphism: ability of one entity/methods to take on multiple forms
             * Compile-Time Polymorphism: Early Binding
                 * Method Overloading: Same method name with different method signature (different type/number/order of parameters)
             * Runtime Polymorphism : Late Binding
                 * Method Overriding: Child class provides new implementation for method that is already defined in its parent class.
             * Runtime Decision: At runtime, Java determines which method to call depending on the object's actual class.
+        * Java is Strictly "Pass By Value" (copies of primitive types & object references are passed)
 **/
 class Student implements Serializable {
+
+    // Transient Instance Variables
+    private transient String userPassword;
 
     // Static Variable: Common for Class
     static String schoolName;
@@ -79,8 +83,8 @@ class Student implements Serializable {
     /**
      * Constructors: Special Methods use to initialize objects, Method with same name as class name and no return type
      * Constructors are called when objects are created (initialize)
-     * Constructor-Overloading : Class having multiple constructor with same name & different parameters
-     * Types of Constructor: Default Constructor, Parameterized Constructors
+     * Constructor Overloading : Class having multiple constructor with same name & different parameters
+     * Types of Constructor: Default Constructor, Parameterized Constructors, Canonical Constructor
      **/
     // Default Constructor
     Student(){

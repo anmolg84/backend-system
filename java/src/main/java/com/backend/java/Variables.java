@@ -25,6 +25,8 @@ package com.backend.java;
         * value cannot be changed after initialization.
         * can be local, instance, or static.
         * scope: depends on where it is declared.
+    * Thread Local Variables: Provides way to store data that is unique to each thread
+        * Useful for avoiding race condition and no need of synchronization
     * Instance and static variables are assigned default values 0 (Numeric), \u0000 (NUll), false(Boolean) & null(object-references)
     * Local Variables are not assigned any default values, Compile Time error will occur if not initialized.
  **/
@@ -43,6 +45,11 @@ public class Variables {
 
         // Local Variable
         int localVariable = 10;
+
+        // Thread Local Variable
+        ThreadLocal<String> threadLocal = new ThreadLocal<>();
+        Thread thread = new Thread(()->threadLocal.set("New Thread"));
+        thread.start();
 
         Variables varObject1 = new Variables(); varObject1.name = "Anmol";
         Variables varObject2 = new Variables(); varObject2.name = "Gupta";

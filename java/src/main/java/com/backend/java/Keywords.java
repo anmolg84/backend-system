@@ -26,15 +26,18 @@ package com.backend.java;
     * Synchronized: used to achieve thread synchronization
         * Synchronized Method: Only one thread can execute it at a time for given objects
         * Synchronized Block: Restricting Access to particular section/block of code.
-            * Inter-Thread Communication methods:
-                * wait(): Current thread to wait and release objects lock, wait till notify(), notifyAll() or timeout occurs
-                * notify(): Wakes up a single thread that is wait() ing on the same object's monitor.
-                * notifyAll(): Wakes up all threads that are wait() ing on the same object's monitor.
+            * Inter-Thread Communication methods: From Object Class
+                * wait(): Causes Current thread to wait and release objects lock, wait till notify(), notifyAll() or timeout occurs
+                * notify(): Wakes up a single thread that is wait()ing on the same object's monitor.
+                * notifyAll(): Wakes up all threads that are wait()ing on the same object's monitor.
         * Synchronized Static: Used to synchronize static methods
     * Volatile: Used to make variable volatile
-        * Value of variable should be read and write directly from main memory rather than localCache
-        * To avoid Visibility Issues in concurrent programming
-
+        * It makes value of variable must be read and write directly from main memory rather than localCache.
+        * Addressing Visibility Issues during concurrent programming
+    * Transient: used to mark an instance variable of a Serializable object to indicate that it should not be part of the object's default serialized form.
+        * When serialized transient fields will be ignored
+        * When deserialized transient fields are set to default values (null/zero)
+        * Used for confidential fields that we do not want to write/transmit over network.
 **/
 public class Keywords{
 }

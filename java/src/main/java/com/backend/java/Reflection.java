@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 
 /**
     * Reflection: API that is used to examine/modify the behavior of methods, classes, and interfaces at runtime.
+    * Usage: Dependency Injection, Object-Related Mapping, Testing Framework, Serialization/Deserialization libraries, dynamic proxies
     * All required classes for reflection provided under (java.lang.reflect) package
     * Used for Debugging, Testing & Dynamic object creation
  **/

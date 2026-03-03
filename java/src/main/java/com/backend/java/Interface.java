@@ -8,9 +8,9 @@ package com.backend.java;
     * Interface = Abstract-Class(Before Java8) -> Java8(Interface+Default-Static-Methods) -> Java9(Java8-Interface+Private-Methods)
     * Types of Interfaces:
         * Normal Interfaces: By Default variables are final static, methods are public abstract
-        * Functional Interfaces: Interface with only single abstract method (Runnable, Callable, Comparator)
+        * Functional Interfaces: Interface with exactly one single abstract method (Runnable, Callable, Comparator)
         * Marker Interfaces: Blank/Empty Interface
-    * Lambda Expression: Way to represent Instance of Function Interface, can only be used for functional interface
+    * Lambda Expression: Way to represent Instance of Functional Interface, compact way to implement single abstract method
     * Default methods: Methods in an interface with a method implementation, Can be overridden by implementing classes
     * Static methods: Methods in an interface with a method implementation that belong to the interface itself, not to any implementing class or object
 **/
@@ -28,6 +28,7 @@ interface NormalInterface{
     default void printReceipt(double amount) {
         System.out.println("Receipt: Paid amount = " + amount);
     }
+    // Static Method
     static void printReceiptStatic(double amount) {
         System.out.println("Receipt: Paid amount Static = " + amount);
     }

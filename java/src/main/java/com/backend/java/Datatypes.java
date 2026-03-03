@@ -5,7 +5,7 @@ package com.backend.java;
         * Primitive Data Types: byte(1b), short(2b), int(4b), long(8b), float(4b), double(8b), char(2b), boolean(1b)
         * Non-Primitive Data Types: String, Arrays, Classes, Interfaces, Objects
     * Wrapper Classes: Provides a way to use primitive data types as objects (Byte, Integer, Float, Double, Character, Boolean)
-        * Wrapper classes Supports Serialization feature: implicitly implement (java.io.Serializable) interface.
+        * Wrapper classes Supports Serialization feature: implicitly implement (java.io.Serializable) interface, Immutable
     * Literals: Any constant value that can be assigned to variable
         * NULL: special literals indicating variable does not refer to any object/absence of value/non-existent objects.
     * Values Overflow: If a value exceeds the range of its primitive data type, it wraps around to the minimum value.(2's-complement representation)

@@ -2,6 +2,7 @@ package com.backend.java;
 
 import java.util.*;
 import java.util.Arrays;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
     * Java Collections Framework: set of interfaces & classes that provide unified architecture for representing & manipulating collections of objects.
@@ -13,6 +14,8 @@ import java.util.Arrays;
     * LinkedList: Implements List & Deque using doubly linked lists.
     * HashMap: Non Synchronized (not thread safe), allows null key and null values.
     * Hashtable: Synchronized (thread-safe), does not allow null keys or null values. Slower due to synchronization overhead.
+    * ConcurrentHashMap: Thread safe HashMap for concurrent access by multiple threads. (java.util.concurrent)
+        * Uses fine-grained locking mechanism allowing higher concurrency and better performance
     * Iterator: interface that provides standard way of traverse elements in collections
         * Fail-fast iterators: Throw a ConcurrentModificationException immediately if the underlying collection is structurally modified after the iterator is created.
             * Examples: ArrayList, HashMap iterators.
@@ -21,7 +24,7 @@ import java.util.Arrays;
     * Stream-API: powerful and functional way to process collection of objects, Filtering, Mapping & Reducing Data (Filter-Map-Reduce)
         * Method Reference: .map(System.out::println), .map(String::toUpperCase)
         * Constructor Reference: .map(className::new)
-    * Optional<T>: Helps in avoiding NullPointerException, forcing to handle case when value might be missing
+    * Optional<T>: Container object helps in avoiding NullPointerException, forcing to handle case when value might be missing
  * */
 public class Collections {
     public static void main(String[] args) {
@@ -45,13 +48,16 @@ public class Collections {
             System.out.println(iterator.next());
         }
 
-        // HashMaps and HashTables
+        // HashMaps, HashTables and ConcurrentHashMap
         Map<String,Integer> mp = new HashMap<>();
         Map<String,Integer> mp2 = new Hashtable<>();
+        ConcurrentHashMap<String,Integer> concurrentHashMap = new ConcurrentHashMap<>();
+        concurrentHashMap.put("Concurrency",100);
         mp.put("Anmol",23); mp.put("Gupta",24);
         for(String key:mp.keySet()){
             System.out.println(key + ":" + mp.get(key));
         }
+        System.out.println(concurrentHashMap.get("Concurrency"));
 
         // Stream-API: Filter-Map-Reduce
         int number = nums2.stream()

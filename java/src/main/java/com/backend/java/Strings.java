@@ -2,6 +2,9 @@ package com.backend.java;
 
 /**
     * String: Immutable Class, Any operation of modification of strings creates a new string object.
+    * Immutable Objects: Objects whose states cannot be changes post creation
+        * Advantages: No Synchronization needed (thread-safe), Easy caching, simplifying concurrency management & preventing Race-condition.
+        * To achieve make variable final private, no override, don't provide setters
     * Mutable Strings: (Mutable Sequence of Characters)
         * StringBuffer: Mutable and thread-safe (synchronized)
         * StringBuilder: Mutable and not thread-safe (faster for single-threaded environments).
