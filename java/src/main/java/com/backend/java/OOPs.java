@@ -3,14 +3,15 @@ package com.backend.java;
 import java.io.Serializable;
 
 /**
+    * Is Java purely Object-Oriented Language? No, As java supports primitive data types
     * Object-Oriented Programming: Programming paradigm, consists 4 main principles (Encapsulation, Inheritance, Polymorphism, and Abstraction)
         * Class: Blueprint for creating object, loads when object is created using ClassLoader
         * Objects: Building built following a pre-defined blueprint (Class)
             * Every class in Java extends Object class
-        * Inheritance: new class (child/subclass) can inherit properties (fields & methods) from an existing class (parent/superclass).
+        * Inheritance(IS-A Relationship): new class (child/subclass) can inherit properties (fields & methods) from an existing class (parent/superclass).
             * Single Level: Base class extending parent class.
             * Multi Level: Sub-Base class extending another Base class
-            * Multiple Level: Java Does not support multiple level inheritance
+            * Multiple Level: Java Does not support multiple level inheritance {Diamond Problem}
         * Encapsulation: Binds private instance variable using Access-Modifiers (restricting direct data access)
             * Providing public getter and setter methods to access variables
             * Access modifiers: private, public, protected, default to control access to fields
@@ -20,7 +21,11 @@ import java.io.Serializable;
             * Runtime Polymorphism : Late Binding
                 * Method Overriding: Child class provides new implementation for method that is already defined in its parent class.
             * Runtime Decision: At runtime, Java determines which method to call depending on the object's actual class.
+            * Method Hiding: Private methods cannot be overridden as they have restricted access to parent class only, hence Hiding
         * Java is Strictly "Pass By Value" (copies of primitive types & object references are passed)
+        * Copy of Objects:
+            * Shallow Copy: Points to same reference as original objects, if copy changes original object changes
+            * Deep Copy: clone() the object and returns new object, if copy changes original object does not change.
 **/
 class Student implements Serializable {
 
@@ -81,16 +86,20 @@ class Student implements Serializable {
     }
 
     /**
-     * Constructors: Special Methods use to initialize objects, Method with same name as class name and no return type
-     * Constructors are called when objects are created (initialize)
-     * Constructor Overloading : Class having multiple constructor with same name & different parameters
-     * Types of Constructor: Default Constructor, Parameterized Constructors, Canonical Constructor
+         * Constructors: Special Methods use to initialize objects, Method with same name as class name and no return type
+         * Constructors are called when objects are created (initialize)
+         * Constructor Overloading : Class having multiple constructor with same name & different parameters
+         * Types of Constructor: Default Constructor, Parameterized Constructors, Canonical Constructor, Copy Constructor
+         * Canonical Constructor: Automatically generated constructor methods in records
+         * Copy Constructor: Used to initialize value of new object to old object of same class
+         * This() and super() cannot coexist in same method, both needs to be on line 1 of constructors
      **/
     // Default Constructor
     Student(){
         super(); // Executes Constructor of Parent Class
         System.out.println("Default Constructor Called");
     }
+
     // Parameterized Constructor
     Student(String name, int rollNumber){
         this(); // Executes default constructor of same class
@@ -100,6 +109,12 @@ class Student implements Serializable {
         this.rollNumber = rollNumber;
         this.cityName = "Pune";
         this.countryName = "India";
+    }
+
+    // Copy Constructor
+    Student(Student student){
+        this.studentName = student.studentName;
+        this.rollNumber = student.rollNumber;
     }
 }
 
@@ -151,6 +166,7 @@ public class OOPs {
 
         // Object Creation
         Student student = new Student("Anmol",23);
+        student.cityName = "Pune";
         Anmol anmol = new Anmol();
         System.out.println(Student.schoolName);
         System.out.println(student.cityName);
@@ -159,6 +175,13 @@ public class OOPs {
         System.out.println(student.addNumber(2,3));
         System.out.println(student.addNumber(2,3,4));
         System.out.println(anmol.addNumber(2,3));
+
+        // Shallow Copy
+        Student newStudent = student;
+        // Deep Copy
+        Student newStudentCopy = new Student();
+        newStudentCopy.cityName = student.cityName;
+
 
         // Anonymous Objects
         new AnmolKids();

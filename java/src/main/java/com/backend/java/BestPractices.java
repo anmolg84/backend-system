@@ -23,6 +23,8 @@ package com.backend.java;
         * GC Logging: -Xlog:gc or -XX:+PrintGCDetails -XX:+PrintGCTimeStamps for detailed GC output.
         * JIT Compiler: Options like -XX:TieredStopAtLevel=1 (for faster startup) or -XX:MaxInlineSize for inlining control.
         * Other: -XX:+UseCompressedOops (for 64-bit JVMs to optimize object pointers), -Djava.awt.headless=true (for server-side apps).
+    * Robust Logging Strategies:
+        * Structured Logging, Asynchronous Logging, Log Levels, Contextual Information, Log Aggregation, Configuration, Security, Performance
 **/
 public class BestPractices {
 }

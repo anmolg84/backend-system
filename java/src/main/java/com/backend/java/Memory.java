@@ -2,9 +2,10 @@ package com.backend.java;
 
 /**
     * Memory Management in JAVA:
-        * Heap: Where objects and their corresponding instance variables are stored (shared among all threads).
-        * Stack: Each thread has its own stack, which stores local variables and method call frames
+        * Heap: Where objects and their corresponding instance variables are stored (shared among all threads) on runtime.
+        * Stack: Each thread has its own stack, which stores local variables and method call frames initially
         * MethodArea/MetaSpace: Stores class-level data like static variables, method code, and metadata for each loaded class.
+        * String Pool: Storage area in heap space to store string literals
     * Garbage collection: An automatic process/principle in Java that reclaims memory occupied by objects that are no longer referenced/used
         * Phase of GC: marking(alive objects) -> sweeping(claim unreferenced space) -> compacting (defragmenting memory)
         * Types of GC Algorithms:
@@ -21,4 +22,8 @@ package com.backend.java;
         * guarantee visibility of fields after reordering of instructions
  */
 public class Memory {
+    public static void main(String[] args) {
+        // Calling Garbage Collector Method -> Finalize() method is called first
+        System.gc();
+    }
 }

@@ -8,9 +8,10 @@ import java.util.concurrent.ConcurrentHashMap;
     * Java Collections Framework: set of interfaces & classes that provide unified architecture for representing & manipulating collections of objects.
     * Includes interfaces like List, Set, Map, Queue, & classes like ArrayList, HashSet, HashMap, LinkedList, TreeSet, TreeMap.
     * Set: Collection of unique elements with no specific order
-    * TreeSet: Store Sorted Values
+    * TreeSet: Store Sorted Values, uses red-black tree
     * List: allowing duplicate elements and maintains insertion order of elements
     * ArrayList: Implements List Interface using Dynamic Array.
+        * Contiguous memory locations are usually used for storing actual values in an array but not in ArrayList
     * LinkedList: Implements List & Deque using doubly linked lists.
     * HashMap: Non Synchronized (not thread safe), allows null key and null values.
     * Hashtable: Synchronized (thread-safe), does not allow null keys or null values. Slower due to synchronization overhead.

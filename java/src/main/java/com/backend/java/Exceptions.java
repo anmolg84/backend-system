@@ -12,6 +12,7 @@ import java.util.Scanner;
         * Try-Block: Contains code which might throw Exception
         * Catch-Block: If Exception occurs catch block will handle exception from try block (Multiple Catch + Parent catch(Exception e))
         * Finally-Block: Executed regardless of exceptions occur or not, mainly used for closing resources
+            * In case of fatal errors StackOverflow/MemoryAccessError , System.exit() finally block will not be called.
         * Try-With-Resources-Block: simplifies resource management by automatically closing resources that implement the AutoCloseable interface
     * Types of Exceptions: Checked, Unchecked & Custom Exceptions
         * Checked: Exceptions that must be caught or declared in a method's signature using throws clause. (Eg:IOException)

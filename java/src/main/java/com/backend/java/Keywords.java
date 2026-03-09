@@ -5,6 +5,8 @@ package com.backend.java;
     * New: Used to create an instance of a class (an object) and allocate memory for it on the heap.
     * Static: Static keyword is used for memory management primarily,
         * It allows a member (variable or method) to belong to the class itself, rather than to an instance(objects) of the class.
+        * Static Methods can be overloaded, cannot be overridden as polymorphism occurs on runtime but static methods are loaded compile time.
+        * Class in java cannot be static, except if it is inner class
     * Package: Organize related classes & interfaces (Modularity)
         * Avoid Naming Collision: Allows classes with the same name to exist in different packages.
         * Access Control: Control access to classes and members.
@@ -22,6 +24,7 @@ package com.backend.java;
         * Abstract Class: Class declared with abstract keywords (Meant to be SubClassed), Object of abstract class cannot be created
             * Can contain abstract & non-abstract methods.
             * Class must be abstract to have abstract methods
+            * Classes can also have non-static and non-final variables.
         * Abstract-Methods: No Method Implementation (Must be implemented by SubClass)
     * Synchronized: used to achieve thread synchronization
         * Synchronized Method: Only one thread can execute it at a time for given objects

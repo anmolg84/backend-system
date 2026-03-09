@@ -1,5 +1,7 @@
 package com.backend.java;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
     * Variables: Containers that stores data in memory.
     * DataType VariableName(follows CamelCase-NamingConvention) = Value;
@@ -27,6 +29,8 @@ package com.backend.java;
         * scope: depends on where it is declared.
     * Thread Local Variables: Provides way to store data that is unique to each thread
         * Useful for avoiding race condition and no need of synchronization
+    * Atomic Variable: Performs read, write & update in a single uninterruptible step.
+        * ensuring thread-safe operations and preventing race conditions
     * Instance and static variables are assigned default values 0 (Numeric), \u0000 (NUll), false(Boolean) & null(object-references)
     * Local Variables are not assigned any default values, Compile Time error will occur if not initialized.
  **/
@@ -51,6 +55,10 @@ public class Variables {
         Thread thread = new Thread(()->threadLocal.set("New Thread"));
         thread.start();
 
+        // Atomic Variable
+        AtomicInteger atomicInteger = new AtomicInteger();
+        atomicInteger.set(1234);
+
         Variables varObject1 = new Variables(); varObject1.name = "Anmol";
         Variables varObject2 = new Variables(); varObject2.name = "Gupta";
 
@@ -59,5 +67,6 @@ public class Variables {
         System.out.println("Instance Variable: " + varObject2.name);
         System.out.println("Static Variable: " + Variables.collegeName);
         System.out.println("Final Variable: " + Variables.finalVariable);
+        System.out.println("Atomic Varible: " + atomicInteger);
     }
 }

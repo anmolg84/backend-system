@@ -11,6 +11,8 @@ import java.util.concurrent.*;
             * Thread Class: This class provides methods to create and manage threads directly.
         * Implements Runnable Interface and then pass it to thread constructor (Better Option as java allows multiple implements but single extend)
             * Runnable interface: A functional interface representing a task that can be executed by a thread.
+    * Thread-Priority: MIN_PRIORITY(1), MAX_PRIORITY(10), NORM_PRIORITY(5), ByDefault=5;
+    * Daemon thread: it is background, low-priority thread that performs supporting tasks for user (non-daemon) threads
     * Different Ways to Implement Thread Pools: Executor and ExecutorService (java.util.concurrent)
         * Executors.newFixedThreadPool(n): creates fixed size (n) pool threads
         * Executors.newCachedThreadPool(): creates flexible pool which uses existing threads when available
