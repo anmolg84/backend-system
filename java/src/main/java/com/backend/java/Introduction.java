@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
     * Process: Java Program(.java) -> Java Compiler(javac) -> Bytecode(.class) {Compilation}
     * Bytecode(.class) -> Java Virtual Machine(JVM) -> Machine Code {Execution: ClassLoader, ByteCodeVerifier, JIT Compiler}
     * JDK(platformDep) Java Development Kit: JRE+DevelopmentTools(Compiler & Debugger).
-    * JRE(platformDep) Java Runtime Environment: JVM+Libraries
-    * Java Virtual Machin(JVM): Actually Executes javaProgram (Bytecode)
+    * JRE(platformDep) Java Runtime Environment: JVM+Java-Libraries
+    * Java Virtual Machine (JVM): Runtime environments that actually Executes javaProgram (Bytecode)
     * Class Loader: Part of JRE which loads .class files into JVM at run time, Dynamic loading of classes
         * Types of Class Loader:
             * Bootstrap CL: Loads all java core libraries (Ex:java.lang)
@@ -21,8 +21,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
         * Native code runs much faster than interpreted bytecode, significantly improving the performance of Java applications
     * AOT-Compilation: Converting bytecode to native machine code before java program is run.
         * GraalVm Native Image: Example for Ahead-of-Time Compilation
-    * Programs: Block of code inorder to achieve certain task
-    * Process: Program under execution, Programs+Allocate Resources->Execution(Process)
+    * Programs: Block/Section of code inorder to achieve certain task
+    * Process: Program under execution, Programs+Allocate-Resources->Execution(Process)
  **/
 @SpringBootApplication
 public class Introduction {

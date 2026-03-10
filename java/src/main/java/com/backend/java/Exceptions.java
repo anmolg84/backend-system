@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 /**
     * Errors: Unrecoverable conditions, typically related to the JVM environment (Ex:OutOfMemoryError, StackOverflowError). (subclass of Throwable)
-    * Exception: Represents conditions that an application might want to catch and handle. (subclass of Throwable)
+    * Exception: Runtime Errors, Represents conditions that an application might want to catch and handle. (subclass of Throwable)
     * Exception Handling: Handles Errors in Java (try-catch-finally)
         * Try-Block: Contains code which might throw Exception
         * Catch-Block: If Exception occurs catch block will handle exception from try block (Multiple Catch + Parent catch(Exception e))
         * Finally-Block: Executed regardless of exceptions occur or not, mainly used for closing resources
-            * In case of fatal errors StackOverflow/MemoryAccessError , System.exit() finally block will not be called.
+            * In case of fatal errors StackOverflow/MemoryAccessError , System.exit() finally block will not be executed.
         * Try-With-Resources-Block: simplifies resource management by automatically closing resources that implement the AutoCloseable interface
     * Types of Exceptions: Checked, Unchecked & Custom Exceptions
         * Checked: Exceptions that must be caught or declared in a method's signature using throws clause. (Eg:IOException)

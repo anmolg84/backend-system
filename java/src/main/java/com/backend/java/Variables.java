@@ -31,7 +31,8 @@ import java.util.concurrent.atomic.AtomicInteger;
         * Useful for avoiding race condition and no need of synchronization
     * Atomic Variable: Performs read, write & update in a single uninterruptible step.
         * ensuring thread-safe operations and preventing race conditions
-    * Instance and static variables are assigned default values 0 (Numeric), \u0000 (NUll), false(Boolean) & null(object-references)
+    * ... : Used to signify variable Arguments(varargs), used for giving function accepting multiple arguments of mentioned dataType.
+    * Instance and static variables are assigned default values 0 (Numeric), \u0000 (Null), false(Boolean) & null(object-references)
     * Local Variables are not assigned any default values, Compile Time error will occur if not initialized.
  **/
 public class Variables {

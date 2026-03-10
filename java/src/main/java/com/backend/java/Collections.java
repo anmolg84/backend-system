@@ -12,8 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
     * List: allowing duplicate elements and maintains insertion order of elements
     * ArrayList: Implements List Interface using Dynamic Array.
         * Contiguous memory locations are usually used for storing actual values in an array but not in ArrayList
-    * LinkedList: Implements List & Deque using doubly linked lists.
-    * HashMap: Non Synchronized (not thread safe), allows null key and null values.
+    * LinkedList: Implements List & Deque using doubly linked lists, Efficient for insertion & deletion.
+    * HashMap: Non Synchronized (not thread safe), allows null key and null values, Supports order of insertion
     * Hashtable: Synchronized (thread-safe), does not allow null keys or null values. Slower due to synchronization overhead.
     * ConcurrentHashMap: Thread safe HashMap for concurrent access by multiple threads. (java.util.concurrent)
         * Uses fine-grained locking mechanism allowing higher concurrency and better performance
@@ -22,6 +22,7 @@ import java.util.concurrent.ConcurrentHashMap;
             * Examples: ArrayList, HashMap iterators.
         * Fail-safe iterators: Does not throw an exception if the underlying collection is modified. They work on a copy of the collection or use specific concurrent data structures
             * Examples: Iterators for ConcurrentHashMap, CopyOnWriteArrayList.
+    * Comparator: Interface in java that contains compare method, and this can be overridden, and we can define our own comparison algorithm
     * Stream-API: powerful and functional way to process collection of objects, Filtering, Mapping & Reducing Data (Filter-Map-Reduce)
         * Method Reference: .map(System.out::println), .map(String::toUpperCase)
         * Constructor Reference: .map(className::new)

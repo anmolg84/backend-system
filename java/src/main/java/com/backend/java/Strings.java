@@ -2,7 +2,7 @@ package com.backend.java;
 
 /**
     * String: Immutable Class, Any operation of modification of strings creates a new string object.
-    * As Immutable strings utilizes string-pool in heap memory efficiently, used as keys in collections like HashMap, HashTable
+    * As Immutable strings utilizes string-constant-pool in heap memory efficiently, used as keys in collections like HashMap, HashTable
     * Immutable Objects: Objects whose states cannot be changes post creation
         * Advantages: No Synchronization needed (thread-safe), Easy caching, simplifying concurrency management & preventing Race-condition.
         * To achieve make variable final private, no override, don't provide setters
@@ -12,7 +12,7 @@ package com.backend.java;
         * Capacity: ByDefault capacity = 16
         * Speed: StringBuilder > StringBuffer > String Class
     * Comparison in Strings: Difference btw == & equals():
-        * ==: Used for reference comparison (for objects), checking if two references point to the same memory location.
+        * ==: Used for reference comparison (for objects), checking if two references point to the same memory location in string-pool.
         * .equals(): method used for content comparison (for objects), checking if two objects are logically "equal" based on their values.
     * Character Array Preferred Over String?: String stay in string-pool till garbage collection whereas not character array, Hence safer option
 **/

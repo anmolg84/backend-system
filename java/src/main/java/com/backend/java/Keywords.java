@@ -10,10 +10,12 @@ package com.backend.java;
     * Package: Organize related classes & interfaces (Modularity)
         * Avoid Naming Collision: Allows classes with the same name to exist in different packages.
         * Access Control: Control access to classes and members.
+        * Sub-Packages: Need to import explicitly even if imported ParentPackage.* as it only loads class within itself not sub-packages.
     * Final: Used to make entities immutable or to prevent modification/inheritance.
-        * Final Variable: Once Initialized, cannot be changed
+        * Final Variable: Once Initialized, cannot be changed, if not initialized can only be initialized using constructor
         * Final Class: Cannot be inherited (subclassed), E.g. String Class
         * Final Methods: Cannot be overridden by subclass
+        * Final Constructors: Not Allowed, Compile-Time-Error
     * This: Refers to the current instance of the class
         * Differentiate instance variables from local variables
         * Calls constructor within other constructors of same class
@@ -41,6 +43,7 @@ package com.backend.java;
         * When serialized transient fields will be ignored
         * When deserialized transient fields are set to default values (null/zero)
         * Used for confidential fields that we do not want to write/transmit over network.
+    * Order of Execution: Static variable/block/method -> main method() -> Instance variable/block/method -> Constructor()
 **/
 public class Keywords{
 }

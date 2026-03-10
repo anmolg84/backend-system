@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 
 /**
     * Thread: Each independent path of execution is called Thread, improving performance and responsiveness. (Smallest Unit used for multitasking)
-    * Thread Life Cycle: (Initialise) New->(start()) Runnable->(run()) Running->(wait()/sleep()) Waiting->(stop()) Dead.
+    * Thread Life Cycle: (Initialize) New->(start()) Runnable->(run()) Running->(wait()/sleep()/blocked()) Waiting->(stop()) Dead.
     * Multi-Threading: Ability of java program to execute different methods/parts of code concurrently withing a single process
     * How to create Threads?
         * Extends Thread class and override run method

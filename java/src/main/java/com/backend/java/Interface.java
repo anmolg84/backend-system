@@ -9,7 +9,7 @@ package com.backend.java;
     * Types of Interfaces:
         * Normal Interfaces: By Default variables are final static, methods are public abstract
         * Functional Interfaces: Interface with exactly one single abstract method (Runnable, Callable, Comparator)
-        * Marker Interfaces: Blank/Empty Interface
+        * Marker/Tagging Interfaces: Blank/Empty Interface, used to get JVM runtime related information
     * Lambda Expression: Way to represent Instance of Functional Interface, compact way to implement single abstract method
     * Default methods: Methods in an interface with a method implementation, Can be overridden by implementing classes
     * Static methods: Methods in an interface with a method implementation that belong to the interface itself, not to any implementing class or object

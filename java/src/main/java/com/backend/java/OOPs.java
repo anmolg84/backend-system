@@ -8,7 +8,8 @@ import java.io.Serializable;
         * Class: Blueprint for creating object, loads when object is created using ClassLoader
         * Objects: Building built following a pre-defined blueprint (Class)
             * Every class in Java extends Object class
-        * Inheritance(IS-A Relationship): new class (child/subclass) can inherit properties (fields & methods) from an existing class (parent/superclass).
+            * Object Creation: new(): when you know the type, newInstance(): when you don't know the type
+        * Inheritance (IS-A Relationship): new class (child/subclass) can inherit properties (fields & methods) from an existing class (parent/superclass).
             * Single Level: Base class extending parent class.
             * Multi Level: Sub-Base class extending another Base class
             * Multiple Level: Java Does not support multiple level inheritance {Diamond Problem}
@@ -21,7 +22,7 @@ import java.io.Serializable;
             * Runtime Polymorphism : Late Binding
                 * Method Overriding: Child class provides new implementation for method that is already defined in its parent class.
             * Runtime Decision: At runtime, Java determines which method to call depending on the object's actual class.
-            * Method Hiding: Private methods cannot be overridden as they have restricted access to parent class only, hence Hiding
+            * Method Hiding: Private methods cannot be overridden as they have restricted access till parent class only, hence Hiding
         * Java is Strictly "Pass By Value" (copies of primitive types & object references are passed)
         * Copy of Objects:
             * Shallow Copy: Points to same reference as original objects, if copy changes original object changes
@@ -91,7 +92,7 @@ class Student implements Serializable {
          * Constructor Overloading : Class having multiple constructor with same name & different parameters
          * Types of Constructor: Default Constructor, Parameterized Constructors, Canonical Constructor, Copy Constructor
          * Canonical Constructor: Automatically generated constructor methods in records
-         * Copy Constructor: Used to initialize value of new object to old object of same class
+         * Copy Constructor: Used to initialize value of new object from old object of same class
          * This() and super() cannot coexist in same method, both needs to be on line 1 of constructors
      **/
     // Default Constructor
@@ -102,6 +103,7 @@ class Student implements Serializable {
 
     // Parameterized Constructor
     Student(String name, int rollNumber){
+        // Constructor Chaining
         this(); // Executes default constructor of same class
         System.out.println("Parameterized Constructor Called");
         // Use of this keyword to refer to Instance Variables
@@ -159,13 +161,24 @@ class OuterClass{
     }
 }
 
+
+
 public class OOPs {
-    public static void main(String[] args) throws ClassNotFoundException {
+
+    // Method Accepting Variable Arguments
+    public static void fooBar(String ... variables){
+        for(String variable : variables){
+            System.out.println(variable);
+        }
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         // Load Class without creating an object
         // Class.forName("Anmol");
 
-        // Object Creation
+        // Object Creation: new() And newInstance()
         Student student = new Student("Anmol",23);
+        Student student1 = (Student) Class.forName("com.backend.java.Student").newInstance();
         student.cityName = "Pune";
         Anmol anmol = new Anmol();
         System.out.println(Student.schoolName);
@@ -203,5 +216,10 @@ public class OOPs {
             }
         };
         outerClassNew.show();
+
+        // VarArgs Function calls
+        OOPs.fooBar("Hello");
+        OOPs.fooBar("Hello", "Anmol");
+        OOPs.fooBar("Hello","Anmol","Brother");
     }
 }
