@@ -30,5 +30,6 @@ public class Arrays {
         Student[] students = new Student[2];
         students[0] = new Student("Anmol",1);
         students[1] = new Student("Gupta", 2);
+        System.out.println(students[0].getStudentName());
     }
 }
